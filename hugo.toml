@@ -1,10 +1,60 @@
 baseURL = 'https://thanh-0dev.github.io/hugo-framework/'
-languageCode = 'en-us'
-title = "Thanh-Long's Hugo Discovery"
+languageCode = 'fr-FR'
+title = "Hugo Framework"
 theme = 'PaperMod'
+defaultContentLanguage = 'fr'
+
 [params]
-  [assets]
-    favicon = "/favicon.ico"
-    favicon16x16 = "/favicon-16x16.png"
-    favicon32x32 = "/favicon-32x32.png"
-    apple_touch_icon = "/apple-touch-icon.png"
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+ShowWordCount = true
+ShowRssButtonInSectionTermList = false
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+DateFormat = "2 January 2006"
+
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+
+[params.homeInfoParams]
+Title = "Hey je m'appelle Thanh-Long Pham 👋"
+Content = "Développeur full-stack en formation CTO & Tech Lead d'Hétic et en apprentissage chez Balyo"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/thanh-0dev"
+
+[[params.socialIcons]]
+name = "other"
+url = "https://thanhlongpham.com/"
+
+[[menu.main]]
+identifier = "Accueil"
+name = "Accueil"
+url = "/"
+weight = 10
+
+
+[[menu.main]]
+identifier = "Recherche"
+name = "Recherche"
+url = "/search/"
+weight = 20
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
